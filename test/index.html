@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script src="browser.dev.js"></script>
+<script>
+  const jsonImplement = new TypeJsonValidator({
+    username: String,
+    status: Boolean
+  });
+  try {
+    jsonImplement.test({
+      username: 'long',
+      status: 1
+    });
+  } catch (e) {
+    // Error 实例
+    console.log(e)
+    console.log(e.message) // 'status' error: expected value type is 'boolean'
+  }
+
+
+</script>
+</body>
+</html>

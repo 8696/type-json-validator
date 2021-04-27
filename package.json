@@ -1,0 +1,43 @@
+{
+  "name": "type-json-validator",
+  "version": "2.0.5",
+  "description": "JSON类型实现测试 - 一款深度校验JSON数据类型及结构的工具",
+  "author": "long<204084802@qq.com>",
+  "main": "./lib/browser.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --env.NODE_ENV=development -w --config build.config.js",
+    "build": "webpack --env.NODE_ENV=production --config build.config.js"
+  },
+  "files": [
+    "lib", "main.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8696/type-json-validator"
+  },
+  "bugs": {
+    "url": "https://github.com/8696/type-json-validator/issues",
+    "email": "204084802@qq.com"
+  },
+  "homepage": "https://github.com/8696/type-json-validator",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "merge": "^1.2.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {},
+  "keywords": [
+    "interface", "json", "model", "implement", "type"
+  ]
+}
